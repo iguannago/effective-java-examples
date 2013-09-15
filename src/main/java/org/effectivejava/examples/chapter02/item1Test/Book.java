@@ -13,7 +13,7 @@ public class Book {
      * Static factory method
      * @return
      */
-    public static Book book() {
+    public static Book instanceOfBook() {
         return new Book();
     }
 }

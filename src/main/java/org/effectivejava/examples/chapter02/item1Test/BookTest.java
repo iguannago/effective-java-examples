@@ -17,7 +17,7 @@ public class BookTest {
     @Test
     public void classTest() {
         Book book = new Book();
-        Book book2 = Book.book();
+        Book book2 = Book.instanceOfBook();
         org.junit.Assert.assertNotNull(book);
         org.junit.Assert.assertNotNull(book2);
     }
