@@ -1,4 +1,4 @@
-package org.effectivejava.examples.chapter02.item1Test;
+package org.effectivejava.examples.chapter02.item01;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

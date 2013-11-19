@@ -1,4 +1,4 @@
-package org.effectivejava.examples.chapter02.item1Test;
+package org.effectivejava.examples.chapter02.item01;
 
 /**
  * Created with IntelliJ IDEA.
