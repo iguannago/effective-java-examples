@@ -6,6 +6,10 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 
+/*
+This class is also known as the Decorator pattern. Because the InstrumentedSet class decorates a Set by adding
+instrumentation.
+ */
 public class InstrumentedSet<E> extends ForwardingSet<E> {
 	private int addCount = 0;
 
