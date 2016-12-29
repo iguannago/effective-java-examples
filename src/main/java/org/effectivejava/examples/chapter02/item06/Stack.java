@@ -20,7 +20,9 @@ public class Stack {
 	public Object pop() {
 		if (size == 0)
 			throw new EmptyStackException();
-		return elements[--size];
+		Object element = elements[--size];
+		elements[size] = null;
+		return element;
 	}
 
 	/**
@@ -30,5 +32,22 @@ public class Stack {
 	private void ensureCapacity() {
 		if (elements.length == size)
 			elements = Arrays.copyOf(elements, 2 * size + 1);
+	}
+
+
+	@Override
+	public String toString() {
+		return "Stack{" +
+				"elements=" + Arrays.toString(elements) +
+				", size=" + size +
+				'}';
+	}
+
+	public static void main(String[] args) {
+		Stack stack = new Stack();
+		stack.push("David");
+		System.out.println(stack.toString());
+		stack.pop();
+		System.out.println(stack.toString());
 	}
 }
